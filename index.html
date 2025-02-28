@@ -1,151 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Nishant Singh">
-    <title>Nishant Singh - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio of Nishant Singh, a Machine Learning/Generative AI Engineer">
+  <meta name="keywords" content="Nishant Singh, Machine Learning Engineer, Data Scientist, Generative AI, LangChain, LangGraph">
+  <meta name="author" content="Nishant Singh">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishant Singh | Generative AI Engineer</title>
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Montserrat and Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
-        header h1 {
-            margin: 0;
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #333;
-        }
-
-        .project-list, .experience-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .project-item, .experience-item {
-            margin: 15px 0;
-        }
-
-        .project-item a, .experience-item a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skill-item {
-            background-color: #ddd;
-            margin: 5px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
 
-    <header>
-        <h1>Nishant Singh</h1>
-        <p>Data Scientist | AI Enthusiast | Machine Learning Researcher</p>
-    </header>
-
-    <div class="container">
-        <!-- About Section -->
-        <section class="section" id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am Nishant Singh, a data scientist with a passion for AI and machine learning. I am currently pursuing an MS in Data Science at DePaul University. I specialize in deep learning, natural language processing, and machine learning engineering. I enjoy working on end-to-end machine learning projects, research, and developing scalable solutions for real-world problems.</p>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="section" id="projects">
-            <h2>Projects</h2>
-            <ul class="project-list">
-                <li class="project-item">
-                    <a href="https://ai-resume-assistantt.streamlit.app/" target="_blank">Agentic AI Job Application Assistant</a>
-                    <p>Developed a state-driven workflow using Python, LangGraph, and LangChain to automate ATS-friendly resume creation, cover letter, and cold email generation. Leveraged ChatOpenAI (GPT-4o) to analyze resumes and job descriptions, integrating an iterative feedback loop for continuous quality improvement.</p>
-                </li>
-                <li class="project-item">
-                    <a href="https://research-paper-summarizer-wj3rhzxeahmxdkqfbpsn7q.streamlit.app/" target="_blank">Agentic AI Research Paper Summarizer</a>
-                    <p>Built a Streamlit-based interactive RAG system integrating LangChain’s ArxivLoader, HuggingFaceEmbeddings, FAISS, and ChatOpenAI for interactive paper queries.</p>
-                </li>
-                <li class="project-item">
-                    <a href="https://chicken-disease-classify.streamlit.app/" target="_blank">Chicken Disease Classification Pipeline</a>
-                    <p>Developed an end-to-end pipeline using a CNN, DVC, Docker, and AWS CI/CD for scalable chicken disease detection.</p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section" id="experience">
-            <h2>Experience</h2>
-            <ul class="experience-list">
-                <li class="experience-item">
-                    <h3>Graduate Research Assistant - DePaul University (Nov 2024 - Present)</h3>
-                    <p>Developed RNN variants using Python/PyTorch, improving model accuracy and efficiency. Conducted experiments to optimize sequence modeling tasks such as sentiment analysis and language translation.</p>
-                </li>
-                <li class="experience-item">
-                    <h3>Data Analyst Intern - Global Shala Education Pvt. Ltd. (Jan 2023 - Feb 2023)</h3>
-                    <p>Created dashboards in R/Tableau to analyze ad performance, reducing ad spend by 15%. Provided actionable insights that improved campaign ROI by 20%.</p>
-                </li>
-                <li class="experience-item">
-                    <h3>ML & Data Analysis Intern - Feynn Labs Services (Nov 2021 - Jan 2022)</h3>
-                    <p>Built predictive models that improved forecasting accuracy by 20%. Designed interactive dashboards to present actionable findings effectively.</p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section" id="skills">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill-item">Python</div>
-                <div class="skill-item">SQL</div>
-                <div class="skill-item">R</div>
-                <div class="skill-item">PyTorch</div>
-                <div class="skill-item">TensorFlow</div>
-                <div class="skill-item">AWS</div>
-                <div class="skill-item">Docker</div>
-                <div class="skill-item">DVC</div>
-                <div class="skill-item">NLP</div>
-                <div class="skill-item">ML Engineering</div>
-            </div>
-        </section>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Nishant Singh</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon" id="menuIcon">&#9776;</div>
     </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Nishant Singh. All Rights Reserved.</p>
-    </footer>
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1>Hello, I'm <span class="highlight">Nishant Singh</span></h1>
+      <p>Generative AI Engineer | Data Scientist | ML Researcher</p>
+      <a href="#about" class="btn">Explore More</a>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I am a <strong>Generative AI Engineer</strong> and <strong>Data Scientist</strong> with hands-on experience in designing and deploying large-scale language models. Proficient in advanced frameworks like <strong>LangChain</strong>, <strong>LangGraph</strong>, and <strong>Hugging Face</strong>, I specialize in Retrieval-Augmented Generation (RAG), custom pipeline orchestration, and building end-to-end machine learning solutions from data ingestion to production deployment.
+        </p>
+        <p>
+          My expertise spans transformer architectures, LLM fine-tuning, and advanced MLOps practices. Currently, I am refining RNN-based gating mechanisms at <strong>DePaul University</strong>, aiming to publish breakthroughs in top-tier AI conferences. I’m passionate about bridging cutting-edge research with practical business impact in the evolving GenAI space.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <!-- Experience Card 1 -->
+      <div class="card">
+        <h3>Graduate Research Assistant</h3>
+        <h4>DePaul University | 11/2024 - Present | Chicago, IL</h4>
+        <ul>
+          <li>Developing novel RNN gating mechanisms to enhance sequence modeling in NLP tasks (sentiment analysis, translation).</li>
+          <li>Implementing end-to-end ML pipelines using <strong>LangChain</strong> for data retrieval, model training, and inference.</li>
+          <li>Collaborating on advanced generative AI research aimed at publications in top-tier conferences (NeurIPS, ICLR).</li>
+          <li>Utilizing Python, PyTorch, and Hugging Face for building and optimizing state-of-the-art language models.</li>
+        </ul>
+      </div>
+
+      <!-- Experience Card 2 -->
+      <div class="card">
+        <h3>Data Analyst Intern</h3>
+        <h4>Global Shala Education Pvt. Ltd. | 01/2023 - 02/2023 | Gurugram, India</h4>
+        <ul>
+          <li>Developed dynamic dashboards in R/Tableau to visualize key metrics (ad spend, reach, impressions).</li>
+          <li>Identified optimization opportunities that reduced ad spend by 15% and increased ROI by 20%.</li>
+          <li>Enhanced targeting strategies through comprehensive data analysis and visualization.</li>
+        </ul>
+      </div>
+
+      <!-- Experience Card 3 -->
+      <div class="card">
+        <h3>Machine Learning & Data Analysis Intern</h3>
+        <h4>Feynn Labs Services | 11/2021 - 01/2022 | Assam, India</h4>
+        <ul>
+          <li>Conducted segmentation analysis of the ML job market, increasing application success rates by 30%.</li>
+          <li>Engineered predictive models that improved forecasting accuracy by 20%.</li>
+          <li>Developed interactive dashboards to streamline decision-making and highlight high-value opportunities.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project Card 1: Agentic AI Job Application Assistant -->
+        <div class="card project-card">
+          <h3>Agentic AI Job Application Assistant</h3>
+          <p>Generates ATS-friendly resumes, cover letters, and cold emails using GPT-based LLMs.</p>
+          <p><em>Tech Stack:</em> Python, LangChain, GPT-4, Streamlit</p>
+          <div class="project-links">
+            <a href="https://ai-resume-assistantt.streamlit.app/" target="_blank" class="project-link">Live App</a>
+            <a href="https://github.com/nishantsingh-ds/AI-Resume-Assistant" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2: Agentic AI Research Paper Summarizer -->
+        <div class="card project-card">
+          <h3>Agentic AI Research Paper Summarizer</h3>
+          <p>Interactive RAG system to query and summarize arXiv research papers.</p>
+          <p><em>Tech Stack:</em> Python, LangGraph, Hugging Face, Streamlit</p>
+          <div class="project-links">
+            <a href="https://research-paper-summarizer-wj3rhzxeahmxdkqfbpsn7q.streamlit.app/" target="_blank" class="project-link">Live App</a>
+            <a href="#" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3: Chicken Disease Classification Pipeline -->
+        <div class="card project-card">
+          <h3>Chicken Disease Classification Pipeline</h3>
+          <p>End-to-end CNN pipeline with MLOps integration, Docker, and AWS CI/CD for deployment.</p>
+          <p><em>Tech Stack:</em> Python, TensorFlow, DVC, Docker, AWS</p>
+          <div class="project-links">
+            <a href="https://chicken-disease-classify.streamlit.app/" target="_blank" class="project-link">Live App</a>
+            <a href="https://github.com/nishantsingh-ds/Chicken-Disease-Classification" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- Project Card 4: Conversational AI Chatbot -->
+        <div class="card project-card">
+          <h3>Conversational AI (Hotel Reservation Chatbot)</h3>
+          <p>Created a hotel reservation chatbot using advanced NLP architectures (LSTM, BRNN, BERT) and integrated HuggingFace Transformers for context-aware responses.</p>
+          <p><em>Tech Stack:</em> Python, RNN, LSTM, BRNN, BERT, TensorFlow, Keras, Hugging Face, NLTK</p>
+          <div class="project-links">
+            <a href="https://github.com/nishantsingh-ds/CHATBOT/tree/main" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- Project Card 5: Anime Recommendation System -->
+        <div class="card project-card">
+          <h3>Anime Recommendation System</h3>
+          <p>Developed a personalized recommendation engine using PCA, clustering (K-Means, DBSCAN), and collaborative filtering to deliver tailored suggestions.</p>
+          <p><em>Tech Stack:</em> Python, PCA, K-Means, DBSCAN, t-SNE, Collaborative Filtering</p>
+          <div class="project-links">
+            <a href="https://github.com/nishantsingh-ds/Anime-Recommendation/tree/main" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- Project Card 6: Sentiment Analysis -->
+        <div class="card project-card">
+          <h3>Sentiment Analysis</h3>
+          <p>Constructed a sophisticated sentiment analysis pipeline that leverages web scraping and text processing to derive actionable insights from online content.</p>
+          <p><em>Tech Stack:</em> Python, BeautifulSoup, NLTK, Text Processing</p>
+          <div class="project-links">
+            <a href="https://github.com/nishantsingh23pbt/Text-Analysis/blob/main/Text%20Analysis-checkpoint.ipynb" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- Project Card 7: Employee Attrition Prediction -->
+        <div class="card project-card">
+          <h3>Employee Attrition Prediction</h3>
+          <p>Designed and implemented predictive models using ensemble techniques and advanced feature engineering to uncover key drivers of employee attrition.</p>
+          <p><em>Tech Stack:</em> Python, Random Forest, AdaBoost, Gradient Boosting, GridSearchCV</p>
+          <div class="project-links">
+            <a href="https://github.com/nishantsingh-ds/Employee-Attrition-Prediction-and-Analysis/tree/main" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+
+      <div class="card">
+        <h3>DePaul University</h3>
+        <h4>M.S. in Data Science | Expected Graduation: 05/2025</h4>
+        <p>
+          Core: Regression, Python, ML Apps, Statistical Data Analysis, Advanced ML, Deep Learning, Transfer Learning, Big Data, Cloud Data Engineering
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>University of Delhi</h3>
+        <h4>B.Sc. in Mathematical Science | 07/2018 - 04/2021</h4>
+        <p>
+          Core: Calculus, Linear Algebra, Probability Theory, Statistical Methods, Operating Systems, Programming Algorithms
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">
+        Interested in discussing a project or just want to say hello? Reach out below.
+      </p>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +1 (513) 972-7243</p>
+        <p><i class="fas fa-envelope"></i>
+          <a href="mailto:nishantsinghns.mail@gmail.com">nishantsinghns.mail@gmail.com</a>
+        </p>
+        <p><i class="fab fa-linkedin"></i>
+          <a href="http://www.linkedin.com/in/nishantsinghh" target="_blank">LinkedIn</a>
+        </p>
+        <p><i class="fab fa-github"></i>
+          <a href="https://github.com/nishantsingh-ds" target="_blank">GitHub</a>
+        </p>
+        <p><i class="fab fa-kaggle"></i>
+          <a href="https://www.kaggle.com/nishantsingh23pbt" target="_blank">Kaggle</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Nishant Singh. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
