@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nishant Singh">
+    <title>Nishant Singh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .project-list, .experience-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .project-item, .experience-item {
+            margin: 15px 0;
+        }
+
+        .project-item a, .experience-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            background-color: #ddd;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nishant Singh</h1>
+        <p>Data Scientist | AI Enthusiast | Machine Learning Researcher</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Nishant Singh, a data scientist with a passion for AI and machine learning. I am currently pursuing an MS in Data Science at DePaul University. I specialize in deep learning, natural language processing, and machine learning engineering. I enjoy working on end-to-end machine learning projects, research, and developing scalable solutions for real-world problems.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="https://ai-resume-assistantt.streamlit.app/" target="_blank">Agentic AI Job Application Assistant</a>
+                    <p>Developed a state-driven workflow using Python, LangGraph, and LangChain to automate ATS-friendly resume creation, cover letter, and cold email generation. Leveraged ChatOpenAI (GPT-4o) to analyze resumes and job descriptions, integrating an iterative feedback loop for continuous quality improvement.</p>
+                </li>
+                <li class="project-item">
+                    <a href="https://research-paper-summarizer-wj3rhzxeahmxdkqfbpsn7q.streamlit.app/" target="_blank">Agentic AI Research Paper Summarizer</a>
+                    <p>Built a Streamlit-based interactive RAG system integrating LangChain’s ArxivLoader, HuggingFaceEmbeddings, FAISS, and ChatOpenAI for interactive paper queries.</p>
+                </li>
+                <li class="project-item">
+                    <a href="https://chicken-disease-classify.streamlit.app/" target="_blank">Chicken Disease Classification Pipeline</a>
+                    <p>Developed an end-to-end pipeline using a CNN, DVC, Docker, and AWS CI/CD for scalable chicken disease detection.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <ul class="experience-list">
+                <li class="experience-item">
+                    <h3>Graduate Research Assistant - DePaul University (Nov 2024 - Present)</h3>
+                    <p>Developed RNN variants using Python/PyTorch, improving model accuracy and efficiency. Conducted experiments to optimize sequence modeling tasks such as sentiment analysis and language translation.</p>
+                </li>
+                <li class="experience-item">
+                    <h3>Data Analyst Intern - Global Shala Education Pvt. Ltd. (Jan 2023 - Feb 2023)</h3>
+                    <p>Created dashboards in R/Tableau to analyze ad performance, reducing ad spend by 15%. Provided actionable insights that improved campaign ROI by 20%.</p>
+                </li>
+                <li class="experience-item">
+                    <h3>ML & Data Analysis Intern - Feynn Labs Services (Nov 2021 - Jan 2022)</h3>
+                    <p>Built predictive models that improved forecasting accuracy by 20%. Designed interactive dashboards to present actionable findings effectively.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">R</div>
+                <div class="skill-item">PyTorch</div>
+                <div class="skill-item">TensorFlow</div>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">DVC</div>
+                <div class="skill-item">NLP</div>
+                <div class="skill-item">ML Engineering</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nishant Singh. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
